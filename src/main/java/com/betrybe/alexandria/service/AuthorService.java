@@ -3,7 +3,6 @@ package com.betrybe.alexandria.service;
 import com.betrybe.alexandria.entity.Author;
 import com.betrybe.alexandria.repository.AuthorRepository;
 import com.betrybe.alexandria.service.exception.AuthorNotFoundException;
-import com.betrybe.alexandria.service.exception.BookNotFoundException;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -82,7 +81,6 @@ public class AuthorService {
    * @throws AuthorNotFoundException the author not found exception
    */
   public Author deleteById(Long id) throws AuthorNotFoundException {
-    // Pegamos a entidade antes de apagar, para poder retorná-la
     Author author = findById(id);
 
     authorRepository.deleteById(id);
