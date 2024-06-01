@@ -2,18 +2,6 @@
 
 Alexandria is a library management system that allows users to manage books, authors, and publishers. This system provides RESTful APIs to perform CRUD (Create, Read, Update, Delete) operations on books, authors, and publishers.
 
-## Table of Contents
-
-- Features
-- Installation
-- Usage
-- API Endpoints
-  - Books
-  - Authors
-  - Publishers
-- DTO Classes
-- Exception Handling
-
 ## Features
 
 - Manage books with detailed information.
